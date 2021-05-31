@@ -1,3 +1,5 @@
+import createPersistedState from 'vuex-persistedstate'
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -20,7 +22,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{src: '~/plugins/localStorage.js'}],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
